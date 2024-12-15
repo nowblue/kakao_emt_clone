@@ -1,0 +1,444 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+fieldset,
+legend,
+figure,
+menu {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+table,
+th,
+td {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+ol,
+ul,
+li {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    font-weight: normal
+}
+
+body,
+input,
+textarea,
+keygen,
+select,
+button {
+    font: normal 12px/1.2 'Open Sans', 'Noto Sans', sans-serif
+}
+
+input,
+textarea,
+select,
+button {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    color: #333;
+    outline: 0;
+    vertical-align: middle
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none
+}
+
+a,
+button,
+input[type='submit'],
+input[type='button'],
+input[type='reset'] {
+    border: 0;
+    background: transparent;
+    cursor: pointer
+}
+
+img {
+    border: 0;
+    vertical-align: top
+}
+
+.header .top {
+    position: relative;
+    /* 기준점 선언 - 포지셔닝을 잡겠다; 절대적으로 부모(자식이 될 수 없음) */
+    display: flex;
+    /* 균등하게 나눠서 위치해야하기 때문에 정가운데에 위치하기 어렵다 */
+    justify-content: space-between;
+    /* 열에 대한 레이아웃 */
+    align-items: center;
+    /*행에 대한 레이아웃 */
+    height: 60px;
+    padding: 0px 20px;
+    /* 상하좌우 */
+}
+
+.header .top .logo {
+    position: absolute;
+    /*position을 사용하면 자동으로 inline-block으로 변한다 */
+    top: 50%;
+    left: 50%;
+    height: 28px;
+    transform: translate(-50%, -50%);
+    /* 자기자신을 기준 - 나의 50%만큼 상하좌우로 움직임 */
+}
+
+.header .logo img {
+    width: 200px;
+}
+
+.header img {
+    width: 25px;
+}
+
+.header .top .btn-menu {
+    width: 24px;
+    height: 24px;
+}
+
+.header .user-menu {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.header .user-menu .btn-search {
+    width: 24px;
+    height: 24px;
+}
+
+.header .user-menu .btn-profile {
+    width: 28px;
+    height: 28px;
+    background: #f1f1f1;
+}
+
+.header-gnb {
+    display: flex;
+    justify-content: center;
+}
+
+.header-gnb .link {
+    display: block;
+    width: 154px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /* 행간 - 보통 150% 많이 사용! flex로도 가능하니 바꿔보기 */
+    color: black;
+    font-size: larger;
+}
+
+.slider .link {
+    display: block;
+    height: 531px;
+    background: #dbb8ff;
+    text-align: center;
+    /* command / 하면 주석 자동생성됨  */
+}
+
+.slider .link .img {
+    width: auto;
+    height: 100%;
+}
+
+.newset {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 45px 0px;
+}
+
+.newset .title {
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.newset .title img {
+    width: 20px;
+    margin: 0 0 0 5px;
+}
+
+.newset .list {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 0 0 0px;
+    justify-content: center;
+}
+
+.newset .list li {
+    padding: 0 0 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 6%);
+    margin: 5px;
+}
+
+.newset .list img {
+    width: 125px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.newset .list li p {
+    color: black;
+    text-align: center;
+    font-size: larger;
+}
+
+.popularset {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 45px 0px;
+}
+
+.popularset .title {
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.popularset .title img {
+    width: 20px;
+    margin: 0 0 0 5px;
+}
+
+.popularset .rankarea {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px 0px 0 0px;
+
+}
+
+.popularset .ranking {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.popularset .ranking li {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: 0px 1px;
+}
+
+.popularset .ranking li .rednum {
+    color: red;
+    font-size: x-large;
+    font-weight: 400;
+    margin: 0 35px 0 5px;
+}
+
+.popularset .ranking li .num {
+    color: black;
+    font-size: x-large;
+    font-weight: 400;
+    margin: 0 35px 0 5px;
+}
+
+.popularset .ranking li a {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 0.5px #eeeeee;
+    padding-bottom: 10px;
+}
+
+.popularset .nameblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 330px;
+    height: 76px;
+}
+
+.popularset .tit {
+    font-size: 16px;
+    color: black;
+}
+
+.popularset .made {
+    font-size: 13px;
+    color: #999;
+}
+
+.popularset img {
+    width: 76px;
+}
+
+.stylewrap {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.styleset {
+    margin: 0 auto;
+    padding: 45px 40px 20px 40px;
+    background: #fafafa;
+}
+
+.styleset .title {
+    color: black;
+    font-size: x-large;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.styleset .title img {
+    width: 20px;
+    margin: 0 0 0 5px;
+}
+
+.styleset .type a {
+    margin: 0 0px 0 22px;
+    display: block;
+    width: 130px;
+}
+
+.styleset .type {
+    display: flex;
+    margin: 30px 30px 50px 30px;
+    justify-content: center;
+}
+
+.styleset .type .tag {
+    display: block;
+    position: relative;
+}
+
+.styleset .type .name {
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.styleset .type .explain {
+    color: white;
+    min-width: 52px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 17px;
+    padding: 0 12px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.styleset .type .emoticon {
+    display: block;
+    position: relative;
+    margin: 0 10px;
+}
+
+.styleset .type .emoticon img {
+    width: 120px;
+}
+
+.footer {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 25px 0px;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    padding: 0px 10px;
+    border-right: 1px solid #999;
+}
+
+.footer ul li:first-child {
+    padding-left: inherit;
+}
+
+.footer ul li:last-child {
+    border: none;
+}
+
+.footer a {
+    color: #666;
+    font-size: 13px;
+}
+
+.footer p {
+    color: #999;
+    margin: 15px 0px;
+    font-size: 11px;
+}
+
+.footer .foot {
+    padding: 3px 0px;
+}
+
+.footer dt {
+    float: left;
+    padding-right: 5px;
+    color: #888;
+    font-size: 11px;
+}
+
+.footer dd {
+    float: left;
+    padding-right: 5px;
+    color: #888;
+    font-size: 11px;
+}
+
+.footer .movetopwrap {
+    text-align: center;
+    /* 가운데로 위치하기 어려움,, */
+}
+
+.footer .movetop {
+    margin: 40px 0 50px;
+    /* 버튼을 이용해 위로 올라가는 기능은 어떻게 적용하는지 모르겠다 */
+}
+
+.footer .movetop img {
+    width: 50px;
+}
+
+/* 호버하는 게 안 먹혀서 안 넣었는데, 한 번 다시 개념을 잡을 필요가 있다고 느꼈다. 자유자재로 만지기 어려움 */
+
+
+
+/*
+1. footer 구조 망가져있음
+2. class 명명이 필요
+3. css수치 사용하지 않기
+*/

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스터디</title>
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!--h1으로 적용되어야함-->
+        <!-- display:flex & display:
+        -->
+        <header class="header">
+            <div class="top">
+                <button class="btn-menu"><img src="kakao_img/menu.png"></button>
+                <a href="" class="logo"><img src="kakao_img/logo.png"></a>
+                <div class="user-menu">
+                    <button class="btn-search"><img src="kakao_img/search.png"></button>
+                    <button class="btn-profile">profile</button>
+                    <!--class 이름은 잘 짓는 게 중요함-->
+                </div>
+                <!-- 위의 수식 button.menu
+            a.logo
+            div.user-menu>button*2-->
+            </div>
+            <!--.top+.bottom-->
+            <div class="bottom">
+                <nav class="header-gnb">
+                    <a href="https://e.kakao.com/" class="link">홈</a>
+                    <a href="https://e.kakao.com/item/new" class="link">신규</a>
+                    <a href="https://e.kakao.com/item/hot" class="link">인기</a>
+                    <a href="https://e.kakao.com/item/style" class="link">스타일</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="slider">
+                <!--section.slider-->
+                <h2 hidden>Slider</h2>
+                <!--hidden 가림 효과. 유저에겐 보이지 않음-->
+                <a href="https://my.kakao.com/product/EMOTICON001?t_src=emoticon&t_ch=webstore&t_obj=web_main_banner"
+                    class="link">
+                    <img src="https://item.kakaocdn.net/dn/cTlxWV/btrYapP2uS1/Bla77dyRUsQkTBzwBF2Lsk/img.gif" alt=""
+                        class="img">
+                </a>
+            </section>
+            <section class="content01">
+                <h2 hidden>first content</h2>
+
+                <div class="newset">
+                    <!-- section으로 바꾸면 더 좋을 것 같다 -->
+                    <!-- h1 넣고 title이라고 class명 짓기. 그럼 a tag의 class명은 어떻게 되는 것인가...? 
+                    선생님은 아래의 a tag 문장 대신
+                    <h1 class="title">신규 이모티콘 <img src="" alt="" class=""> 사용하심. -->
+                    <a href="https://e.kakao.com/item/new" class="title">신규 이모티콘<img src="kakao_img/arrow.png"></a> <!-- img class 넣기-->
+                    <ul class="list"> <!-- emoticon list로 class명 바꾸면 좋을듯 -->
+                        <!-- <li>
+                            <a href="">    ----- >   a>img+p
+                                <img src="" alt="">
+                                <p></p>
+                            </a>
+                        </li> -->
+                        <li>  <!-- 주로 li tag의 class명으로 item 사용 많이한다.-->
+                            <a href="https://e.kakao.com/t/gray-kittens-college-life">
+                                <img src="https://item.kakaocdn.net/do/0bc62ba5fb4cc52f56af5e7b2081ea2e7154249a3890514a43687a85e6b6cc82"
+                                    alt=""> <!-- class명으로 img 사용 -->
+                                <p>연약한 회색아기고양이</p> <!-- class명으로 name을 사용-->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/cute-sticky-rice-duck-4">
+                                <img src="https://item.kakaocdn.net/do/7b8ba4531fd93e44525c7765f45277f7f43ad912ad8dd55b04db6a64cddaf76d"
+                                    alt="">
+                                <p>잔망쟁이 찹쌀떡 4</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/i-am-a-wombat">
+                                <img src="https://item.kakaocdn.net/do/957ba272e30588e0dae4fddf7ceaa500f43ad912ad8dd55b04db6a64cddaf76d"
+                                    alt="">
+                                <p>웜뱃인디!</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/gentle-hamster-2">
+                                <img src="https://item.kakaocdn.net/do/a7cce364a96361cbf0a492b77d1f3197f43ad912ad8dd55b04db6a64cddaf76d"
+                                    alt="">
+                                <p>공손한 햄스터 2</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/the-complaining-bear">
+                                <img src="https://item.kakaocdn.net/do/bfa53e037cdb8a72d922f7164d6eddddf43ad912ad8dd55b04db6a64cddaf76d"
+                                    alt="">
+                                <p>궁시렁 곰돌이</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/the-college-freshman-puppy">
+                                <img src="https://item.kakaocdn.net/do/9af77c88a5f18a998ea08caa1cf67ab515b3f4e3c2033bfd702a321ec6eda72c"
+                                    alt="">
+                                <p>멍이는 새내기 대학생이야!</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/im-a-cute-squeaksqueak">
+                                <img src="https://item.kakaocdn.net/do/7051bc80ab53843f58e8c670bd97830bf43ad912ad8dd55b04db6a64cddaf76d"
+                                    alt="">
+                                <p>암어 깜찍한 쥑쥑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/the-duck-ver-12">
+                                <img src="https://item.kakaocdn.net/do/697f6745d59c9803cb494fa7416204f1f43ad912ad8dd55b04db6a64cddaf76d"
+                                    alt="">
+                                <p>오둥이 입니다만 12</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/frugal-living">
+                                <img src="https://item.kakaocdn.net/do/998666f349909ae0661373f676ce49697154249a3890514a43687a85e6b6cc82"
+                                    alt="">
+                                <p>슬기로운 절약생활</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://e.kakao.com/t/honest-ddarami">
+                                <img src="https://item.kakaocdn.net/do/449525c7290f9494a1aa3164fed4e1d515b3f4e3c2033bfd702a321ec6eda72c"
+                                    alt="">
+                                <p>솔직한 따라미</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- .newset -->
+                <div class="popular"></div>
+                <!-- .popular -->
+            </section>
+
+            <section class="content02">
+                <h2 hidden>second content</h2>
+
+                <div class="popularset">
+                    <a href="https://e.kakao.com/item/hot" class="title">인기 이모티콘<img src="kakao_img/arrow.png"></a>
+
+                    <div class="rankarea">
+                        <ol class="ranking">
+                            <li>
+                                <span class="rednum">1</span>
+                                <a href="https://e.kakao.com/t/the-country-retriever-is-in-love">
+                                    <div class="nameblock">
+                                        <span class="tit">시고르 리트리버 댕댕라이프</span>
+                                        <span class="made">문랩</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/f3caea1f18a82f428d4f0634a4568c77f43ad912ad8dd55b04db6a64cddaf76d"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rednum">2</span>
+                                <a href="https://e.kakao.com/t/broken-bear-ver-6">
+                                    <div class="nameblock">
+                                        <span class="tit">망그러진 곰 6</span>
+                                        <span class="made">유랑</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/0ee8ca879a456d6082f3657933c0631cf43ad912ad8dd55b04db6a64cddaf76d"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rednum">3</span>
+                                <a href="https://e.kakao.com/t/broken-bear-couple-ver">
+                                    <div class="nameblock">
+                                        <span class="tit">커플 망그러진 곰</span>
+                                        <span class="made">유랑</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/1318d6316a603a75dc7021a51ddc6bc27154249a3890514a43687a85e6b6cc82"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="num">4</span>
+                                <a href="https://e.kakao.com/t/todays-meme-have-a-good-time">
+                                    <div class="nameblock">
+                                        <span class="tit">오늘의 짤 #짤 지내봅시다</span>
+                                        <span class="made">MOH Inc.</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/2b0766ef6b4d5fd252f23e28d2b258a5f43ad912ad8dd55b04db6a64cddaf76d"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="num">5</span>
+                                <a href="https://e.kakao.com/t/yoha-ver-31">
+                                    <div class="nameblock">
+                                        <span class="tit">요하의 예쁜 말 대잔치</span>
+                                        <span class="made">요하</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/19c1d51338f1cc452aff61572e8e83bcf43ad912ad8dd55b04db6a64cddaf76d"
+                                        alt="">
+                                </a>
+                            </li>
+                        </ol>
+
+                        <ol class="ranking">
+                            <li>
+                                <span class="num">6</span>
+                                <a href="https://e.kakao.com/t/typical-life-at-the-office">
+                                    <div class="nameblock">
+                                        <span class="tit">오늘도 즐겁고 신나는 사회생활</span>
+                                        <span class="made">똑띠</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/d7c3efaac60e23e6501408d49746e341f43ad912ad8dd55b04db6a64cddaf76d"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="num">7</span>
+                                <a href="https://e.kakao.com/t/life-at-the-office-2">
+                                    <div class="nameblock">
+                                        <span class="tit">직장인인데요 2</span>
+                                        <span class="made">유랑</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/a3b0e301b0b9b71b831469ce0878a38ff43ad912ad8dd55b04db6a64cddaf76d"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="num">8</span>
+                                <a href="https://e.kakao.com/t/talk-like-an-internet-user">
+                                    <div class="nameblock">
+                                        <span class="tit">말투왜그래인터넷많이하는사람같아</span>
+                                        <span class="made">수키도키</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/7aa727c43d01662f759a7d0ed44a1d1a7154249a3890514a43687a85e6b6cc82"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="num">9</span>
+                                <a href="https://e.kakao.com/t/zanmang-loopy-ver-5">
+                                    <div class="nameblock">
+                                        <span class="tit">잔망 루피 5</span>
+                                        <span class="made">잔망 루피</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/862539f7f2171437385154b3b749990f7154249a3890514a43687a85e6b6cc82"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <span class="num">10</span>
+                                <a href="https://e.kakao.com/t/a-collection-of-mr-moon">
+                                    <div class="nameblock">
+                                        <span class="tit">문상훈 짤 모음</span>
+                                        <span class="made">빠더너스</span>
+                                    </div>
+                                    <img src="https://item.kakaocdn.net/do/1bdb0d9bdf101ca9551db457b7b1e7bff43ad912ad8dd55b04db6a64cddaf76d"
+                                        alt="">
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section class="content03">
+                <h2 hidden>third content</h2>
+
+                <div class="styleset">
+                    <div class="stylewrap">
+                        <a href="https://e.kakao.com/item/style" class="title">스타일<img src="kakao_img/arrow.png"></a>
+                        <ul class="type">
+                            <!-- section.content01 -->
+                            <li class="tag">
+                                <a href="https://e.kakao.com/style/groups/470">
+                                    <span class="name" style="color:rgb(176 224 139);">#일러스트</span>
+                                    <span class="explain" style="background-color:rgb(178 224 139);">#흑과백</span>
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/marshmallong">
+                                    <img src="https://item.kakaocdn.net/do/893be34fe85309fafc179532f8633517617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/activities-of-suspicious-cats">
+                                    <img src="https://item.kakaocdn.net/do/fbcd33ce9320f65bb9bd779f4b8926ee617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/dongbok-the-polar-bear">
+                                    <img src="https://item.kakaocdn.net/do/efb1919094118e3ff5fca9a851478c67617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/black-shadow-bean">
+                                    <img src="https://item.kakaocdn.net/do/e18a72ca0091d21f616fdf2c959ea807617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/wonban-the-cat">
+                                    <img src="https://item.kakaocdn.net/do/a2f3107a0ce9c88e92dead31847cc050617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="type">
+                            <!-- section.content01 -->
+                            <li class="tag">
+                                <a href="https://e.kakao.com/style/groups/470">
+                                    <span class="name" style="color:#70cbc8;">#재밌는</span>
+                                    <span class="explain" style="background-color:#93e0de;">#단순하게 생긴</span>
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/praying-for-unkind-people">
+                                    <img src="https://item.kakaocdn.net/do/e790f84d3bf948f605d5067b8ce545b6617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/the-pink-cat-in-black-headphones">
+                                    <img src="https://item.kakaocdn.net/do/985e3a5413b69090163be70ff4db565a617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/bulked-up-rabbit-2">
+                                    <img src="https://item.kakaocdn.net/do/3c0166cf4486efcab7939cc59f5c2a5f617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/go-deer-2">
+                                    <img src="https://item.kakaocdn.net/do/a189c69d2dc1ee6225886f9448591726617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/just-doodles">
+                                    <img src="https://item.kakaocdn.net/do/c31e0fd82380214aed7264f6897fd898617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="type">
+                            <!-- section.content01 -->
+                            <li class="tag">
+                                <a href="https://e.kakao.com/style/groups/470">
+                                    <span class="name" style="color:#f59a9a">#귀여운</span>
+                                    <span class="explain" style="background-color:#f7b7b7;">#동글동글한</span>
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/i-am-a-wombat">
+                                    <img src="https://item.kakaocdn.net/do/957ba272e30588e0dae4fddf7ceaa500617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/bbozza-brings-joy">
+                                    <img src="https://item.kakaocdn.net/do/2b2b4589ec4aaa7a9292499ceb387ebe617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/cute-rabbit-todaeng">
+                                    <img src="https://item.kakaocdn.net/do/30a1d06740d898054fef53fbe6c99006617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/did-i-when-i-did">
+                                    <img src="https://item.kakaocdn.net/do/a22ad1b1068b39259efd0759a533a283617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                            <li class="emoticon">
+                                <a href="https://e.kakao.com/t/ggosoon-and-chapchap">
+                                    <img src="https://item.kakaocdn.net/do/e8651dd3443ce765bbdf8140d52fa2a2617ea012db208c18f6e83b1a90a7baa7"
+                                        alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <ul>
+                <li>
+                    <a href="https://e.kakao.com/policy">이용약관</a>
+                </li>
+                <li>
+                    <a href="https://billing-web.kakao.com/kbill/terms/service">유료이용안내</a>
+                </li>
+                <li>
+                    <a href="https://www.kakao.com/policy/privacy"><strong>개인정보처리방침</strong></a>
+                </li>
+                <li>
+                    <a href="https://bizemoticon.kakao.com/">기업고객</a>
+                </li>
+                <li>
+                    <a href="https://cs.kakao.com/requests?category=278&locale=ko&node=30555&service=94">문의하기</a>
+                </li>
+                <li>
+                    <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208147521">공정위사업자정보</a>
+                </li>
+                <li>
+                    <a href="https://www.kakaocorp.com/page/"><strong>(주)카카오</strong></a>
+                </li>
+            </ul>
+            <p>
+                카카오 이모티콘샵에서 판매되는 콘텐츠의 저작권은 콘텐츠 제공자에게 있으며, 이를 무단 이용하는 경우 저작권법 등에 따라 처벌될 수 있습니다.
+            </p>
+            <div>
+                <div class="foot">
+                    <dt>대표</dt>
+                    <dd>: 홍은택</dd>
+                    <dt>사업자등록번호</dt>
+                    <dd>: 120-81-47521</dd>
+                    <dt>통신판매업신고번호</dt>
+                    <dd>: 제2015-제주아라-0032호</dd>
+                </div><br />
+                <div class="foot">
+                    <dt>주소</dt>
+                    <dd>: 제주특별자치도 제주시 첨단로 242(영평동)</dd>
+                    <dt>호스팅사업자</dt>
+                    <dd>: (주)카카오</dd>
+                    <dt>고객센터</dt>
+                    <dd>: 1577-3754</dd>
+                    <dt>메일</dt>
+                    <dd>: help.notice@kakaocorp.com</dd>
+                </div>
+            </div>
+            <div class="movetopwrap">
+                <a href="#" class="top"><button type="button" class="movetop"><img src="kakao_img/movetop.png"></button></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
